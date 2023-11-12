@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class GretelController : MonoBehaviour
 {
     public GameObject pretzel;
+
+    public GameObject crumbPrefab;
 
     public float followDistance;
 
@@ -18,6 +21,13 @@ public class GretelController : MonoBehaviour
     public Animator animator;
 
     PlayerController pc;
+
+    private float crumbTime = 7.0f;
+    private float timer = 0.0f;
+
+    public int crumbsLost = 0;
+
+    public float crumbLaunchSpeed = .05f;
 
     //private Vector3 _lastPosition;
 
@@ -131,6 +141,32 @@ public class GretelController : MonoBehaviour
             //     //nav.SetDestination(new Ray(pretzel.transform.position + 0, ));
             //     nav.SetDestination(newVector);
             // }
+            timer += Time.deltaTime;
+            if (timer > crumbTime)
+            {
+                if(crumbsLost < 8) {
+                    Vector3 scale = this.transform.localScale;
+                    scale.x *= .9f;
+                    scale.y *= .9f;
+                    this.transform.localScale = scale;
+                    timer = timer - crumbTime;
+                    crumbsLost++;
+                    GameObject crumb = Instantiate(crumbPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+                    crumb.GetComponent<Rigidbody2D>().AddForce(
+                        new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)) * crumbLaunchSpeed);
+                }
+                else {
+                    if(timer > crumbTime + 3) {
+                        SceneManager.LoadScene("You Lost");
+                    }
+                }
+
+                
+        }
+
+    }
+
+    void FixedUpdate () {
 
     }
 
