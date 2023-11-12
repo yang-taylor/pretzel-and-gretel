@@ -33,6 +33,10 @@ public class SceneChanger : MonoBehaviour
         SceneManager.LoadScene("Level 3");
     }
     
+    public void toYouLost() {
+    	SceneManager.LoadScene("You Lost");
+    }
+    
     public void toCutscene1() {
     	SceneManager.LoadScene("Cutscene 1");
     }
