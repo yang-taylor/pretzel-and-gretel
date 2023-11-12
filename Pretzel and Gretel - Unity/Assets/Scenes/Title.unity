@@ -287,7 +287,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 18.908966
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -375,7 +375,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6c462443726524c4fbc2c30724f90500, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f85c4d86a175af64ab3b39557456ace6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -558,7 +558,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1409925420}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: toCutscene1
+        m_MethodName: toIntro
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
