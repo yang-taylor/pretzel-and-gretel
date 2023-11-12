@@ -5,11 +5,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Rigidbody2D rb;
+    
     public Animator animator;
 
     public float speed;
 
     public Vector2 movement;
+
+    public GameObject gretel;
 
 
     public bool facingLeft = false;
@@ -62,5 +65,25 @@ public class PlayerController : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
         facingLeft = !facingLeft;
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("OnCollisionEnter2D");
+        Debug.Log(collision);
+
+        //Check for a match with the specific tag on any GameObject that collides with your GameObject
+        if (collision.gameObject.tag == "candy")
+        {
+            //If the GameObject has the same tag as specified, output this message in the console
+            
+            gretel.GetComponent<GretelController>().crumbsLost -= 1;
+            Vector3 scale = gretel.transform.localScale;
+                    scale.x = scale.x * 10f / 9f;
+                    scale.y = scale.y * 10f / 9f;
+                    gretel.transform.localScale = scale;
+
+            Destroy(collision.gameObject);
+        }
     }
 }

@@ -8,6 +8,8 @@ public class GretelController : MonoBehaviour
 {
     public GameObject pretzel;
 
+    
+
     public GameObject crumbPrefab;
 
     public float followDistance;
@@ -56,6 +58,24 @@ public class GretelController : MonoBehaviour
     void Update()
     {
         nav.SetDestination(pretzel.transform.position);
+
+        if (Input.GetKeyDown(KeyCode.Z))
+        {
+            if(crumbsLost < 8) {
+                    Vector3 scale = this.transform.localScale;
+                    scale.x *= .9f;
+                    scale.y *= .9f;
+                    this.transform.localScale = scale;
+                    crumbsLost++;
+                    GameObject crumb = Instantiate(crumbPrefab, this.transform.position, Quaternion.identity);
+                    crumb.GetComponent<Rigidbody2D>().AddForce(
+                        new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)) * crumbLaunchSpeed);
+                }
+                else {
+                    Wait(2);
+                    SceneManager.LoadScene("You Lost");
+                }
+        }
 
         // var heading = this.transform.position + pretzel.transform.position;
         // heaing.Normalize();
@@ -151,14 +171,14 @@ public class GretelController : MonoBehaviour
                     this.transform.localScale = scale;
                     timer = timer - crumbTime;
                     crumbsLost++;
-                    GameObject crumb = Instantiate(crumbPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+                    GameObject crumb = Instantiate(crumbPrefab, this.transform.position, Quaternion.identity);
                     crumb.GetComponent<Rigidbody2D>().AddForce(
                         new Vector2(Random.Range(-1f, 1f), Random.Range(-1f, 1f)) * crumbLaunchSpeed);
                 }
                 else {
-                    if(timer > crumbTime + 3) {
-                        SceneManager.LoadScene("You Lost");
-                    }
+                    Wait(2);
+                    SceneManager.LoadScene("You Lost");
+
                 }
 
                 
@@ -180,6 +200,10 @@ public class GretelController : MonoBehaviour
     Vector3 PointAlongDirection(Vector3 origin, Vector3 direction,
         float distance) {
         return origin + direction.normalized * distance;
+    }
+    
+    private IEnumerator Wait(int seconds) {
+        yield return new WaitForSeconds(seconds);
     }
 
 }
