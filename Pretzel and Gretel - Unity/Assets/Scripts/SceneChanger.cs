@@ -17,6 +17,10 @@ public class SceneChanger : MonoBehaviour
         
     }
     
+    public void toTitle() {
+    	SceneManager.LoadScene("Title");
+    }
+    
     public void toIntro() {
     	SceneManager.LoadScene("Intro");
     }
