@@ -986,7 +986,7 @@ MonoBehaviour:
   animator: {fileID: 238667769}
   speed: 1.6
   movement: {x: 0, y: 0}
-  gretel: {fileID: 0}
+  gretel: {fileID: 1095307668}
   facingLeft: 0
 --- !u!95 &238667769
 Animator:
