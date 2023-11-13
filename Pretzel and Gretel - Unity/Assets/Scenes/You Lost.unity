@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 1143919164}
   - component: {fileID: 1143919163}
   - component: {fileID: 1143919162}
-  - component: {fileID: 1143919161}
+  - component: {fileID: 1143919165}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -237,18 +237,6 @@ RectTransform:
   m_AnchoredPosition: {x: 750, y: -410}
   m_SizeDelta: {x: 400, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1143919161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143919159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3112adabcbadb1949bb70b3a9726a75a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1143919162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,8 +281,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1143919161}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+      - m_Target: {fileID: 1143919165}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: toLevel1
         m_Mode: 1
         m_Arguments:
@@ -343,6 +331,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1143919159}
   m_CullTransparentMesh: 1
+--- !u!114 &1143919165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143919159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303007dd3386d0340b36de2c8063c4ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1328026296
 GameObject:
   m_ObjectHideFlags: 0
