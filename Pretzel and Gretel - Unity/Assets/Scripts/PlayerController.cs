@@ -86,4 +86,12 @@ public class PlayerController : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+    
+    /**void OnTriggerEnter2D(Collider2D other)
+    {
+            Debug.Log("something");
+            // Get the game manager
+            GameManager gameManager = FindObjectOfType<GameManager>();
+            gameManager.toCutscene1();
+    }*/
 }

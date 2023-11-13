@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
         }
         
         public void toCutscene1() {
-        	SceneManager.LoadScene("Cutscene 1");
+        	SceneManager.LoadScene("Cutscene1");
         	audioManager.playTheme();
         	audioManager.c1Voice();
         }
