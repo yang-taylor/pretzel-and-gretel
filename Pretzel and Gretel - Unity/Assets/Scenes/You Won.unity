@@ -546,7 +546,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2045651751}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: toTitle
         m_Mode: 1
         m_Arguments:
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2045651745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 303007dd3386d0340b36de2c8063c4ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 28a81fe017fd0b844b9bc27f6f177db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2136345215
@@ -691,8 +691,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2136345221}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
-        m_MethodName: toLevel1
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: toIntro
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2136345215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 303007dd3386d0340b36de2c8063c4ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 28a81fe017fd0b844b9bc27f6f177db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807

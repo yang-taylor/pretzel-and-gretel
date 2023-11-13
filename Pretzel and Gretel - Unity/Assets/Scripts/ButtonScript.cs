@@ -16,87 +16,87 @@ public class ButtonScript : MonoBehaviour
         
     }
     
-    void toTitle() {
+    public void toTitle() {
     	GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toTitle();
     }
     
-    void toIntro() {
+    public void toIntro() {
     	GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toIntro();
     }
     
-    void toLevel1() {
+    public void toLevel1() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toLevel1();
     }
             
-    void toLevel2() {
+    public void toLevel2() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toLevel2();
     }
             
-    void toLevel3() {
+    public void toLevel3() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toLevel3();
     }
             
-    void toYouLost() {
+    public void toYouLost() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toYouLost();
     }
             
-    void toCutscene1() {
+    public void toCutscene1() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toCutscene1();
     }
             
-    void toCutscene2() {
+    public void toCutscene2() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toCutscene2();
     }
             
-    void toCutscene3() {
+    public void toCutscene3() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toCutscene3();
     }
             
-    void toCutscene4() {
+    public void toCutscene4() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toCutscene4();
     }
             
-    void toCutscene5() {
+    public void toCutscene5() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toCutscene5();
     }
             
-    void toCutscene6() {
+    public void toCutscene6() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toIntro();
     }
             
-    void toLevel3Chase() {
+    public void toLevel3Chase() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toLevel3Chase();
     }
             
-    void toLevel2Chase() {
+    public void toLevel2Chase() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toLevel2Chase();
     }
             
-    void toLevel1Chase() {
+    public void toLevel1Chase() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toLevel1Chase();
     }
             
-    void toOutro() {
+    public void toOutro() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toOutro();
     }
             
-    void toYouWon() {
+    public void toYouWon() {
         GameManager gameManager = FindObjectOfType<GameManager>();
     	gameManager.toYouWon();
     }

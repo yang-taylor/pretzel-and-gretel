@@ -517,7 +517,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1027709944}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: toCutscene4
         m_Mode: 1
         m_Arguments:
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1027709938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 303007dd3386d0340b36de2c8063c4ca, type: 3}
+  m_Script: {fileID: 11500000, guid: 28a81fe017fd0b844b9bc27f6f177db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2065621329
