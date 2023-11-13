@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!82 &160524052 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5037389082469347461, guid: e6db556df346f13498cd7c8668136c57, type: 3}
-  m_PrefabInstance: {fileID: 2011054136153704361}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &406889837
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,11 +318,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &660801861 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3107057790260616799, guid: e6db556df346f13498cd7c8668136c57, type: 3}
-  m_PrefabInstance: {fileID: 2011054136153704361}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &747447433
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,11 +393,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747447433}
   m_CullTransparentMesh: 1
---- !u!82 &903537352 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 25766672479524122, guid: e6db556df346f13498cd7c8668136c57, type: 3}
-  m_PrefabInstance: {fileID: 2011054136153704361}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1352993569
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +473,6 @@ GameObject:
   - component: {fileID: 1409925423}
   - component: {fileID: 1409925422}
   - component: {fileID: 1409925421}
-  - component: {fileID: 1409925424}
   - component: {fileID: 1409925425}
   m_Layer: 5
   m_Name: Button
@@ -572,18 +556,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1409925424}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1409925422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -622,38 +594,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1409925418}
   m_CullTransparentMesh: 1
---- !u!114 &1409925424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1409925418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07d50a4d9bc5068449f6520141f6878f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSource: {fileID: 160524052}
-  voiceSource: {fileID: 660801861}
-  fxSource: {fileID: 903537352}
-  introVoiceover: {fileID: 0}
-  cutscene1Voiceover: {fileID: 0}
-  cutscene2Voiceover: {fileID: 0}
-  cutscene3Voiceover: {fileID: 0}
-  cutscene4Voiceover: {fileID: 0}
-  cutscene5Voiceover: {fileID: 0}
-  cutscene6Voiceover: {fileID: 0}
-  outroVoiceover: {fileID: 0}
-  button: {fileID: 8300000, guid: b59d9a7a876868846952594ea4557cc9, type: 3}
-  crumbDrop: {fileID: 0}
-  nomNom: {fileID: 0}
-  witchLaugh: {fileID: 0}
-  youLost: {fileID: 0}
-  youWon: {fileID: 0}
-  chaseMusic: {fileID: 0}
-  mazeMusic: {fileID: 0}
-  themeMusic: {fileID: 0}
 --- !u!114 &1409925425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -674,6 +614,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 25766672479524122, guid: e6db556df346f13498cd7c8668136c57, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 51473829997647060, guid: e6db556df346f13498cd7c8668136c57, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -717,6 +661,14 @@ PrefabInstance:
     - target: {fileID: 2743651859812453232, guid: e6db556df346f13498cd7c8668136c57, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3107057790260616799, guid: e6db556df346f13498cd7c8668136c57, type: 3}
+      propertyPath: Priority
+      value: 77
+      objectReference: {fileID: 0}
+    - target: {fileID: 5037389082469347461, guid: e6db556df346f13498cd7c8668136c57, type: 3}
+      propertyPath: m_Volume
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

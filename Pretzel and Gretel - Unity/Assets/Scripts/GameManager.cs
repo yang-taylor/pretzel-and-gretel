@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
         
         public void toIntro() {
         	SceneManager.LoadScene("Intro");
+        	Debug.Log("Made it to toIntro()");
         	audioManager.introVoice();
         }
         
@@ -52,7 +53,8 @@ public class GameManager : MonoBehaviour
         
         public void toCutscene1() {
         	SceneManager.LoadScene("Cutscene1");
-        	audioManager.playTheme();
+        	audioManager.stopMusic();
+        	//audioManager.playTheme();
         	audioManager.c1Voice();
         }
         
