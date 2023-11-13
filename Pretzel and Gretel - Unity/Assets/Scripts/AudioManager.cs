@@ -39,8 +39,10 @@ public class AudioManager : MonoBehaviour
     }
     
     public void introVoice() {
+    	Debug.Log("Made it to introVoice()");
     	voiceSource.Stop();
     	voiceSource.clip = introVoiceover;
+    	Debug.Log("introVoiceover should've played");
     	voiceSource.Play();
     }
     
