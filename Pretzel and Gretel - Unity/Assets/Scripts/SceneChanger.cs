@@ -10,7 +10,7 @@ public class SceneChanger : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioManager = GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class SceneChanger : MonoBehaviour
     
     public void toIntro() {
     	SceneManager.LoadScene("Intro");
-    	audioManager.introVoice();
+    	//audioManager.introVoice();
     }
     
     public void toLevel1() {
